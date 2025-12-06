@@ -1,1 +1,20 @@
+/* Clean, Modern Blue & White Theme */
+:root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+header { background: white; padding: 1rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); text-decoration: none;}
+nav a { margin-left: 15px; text-decoration: none; color: #64748b; font-weight: 500; }
+nav a:hover { color: var(--primary); }
+main { flex: 1; padding: 2rem; display: flex; flex-direction: column; align-items: center; }
+.card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+input, button { width: 100%; padding: 0.75rem; margin-top: 10px; border-radius: 6px; border: 1px solid #cbd5e1; box-sizing: border-box; }
+button { background: var(--primary); color: white; border: none; cursor: pointer; font-weight: bold; }
+button:hover { opacity: 0.9; }
+footer { text-align: center; padding: 1rem; color: #94a3b8; font-size: 0.9rem; }
+.hidden { display: none; }
+/* Dashboard Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; width: 100%; max-width: 1200px; margin-top: 20px;}
+.product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.product-card img { width: 100%; height: 200px; object-fit: cover; }
+.p-content { padding: 1rem; }
 
