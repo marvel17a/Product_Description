@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="style.css"></head>
+<body>
+    <header>
+        <div class="logo">AutoDesc AI</div>
+        <nav>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card" style="max-width: 600px;">
+            <h3>Create New Product</h3>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="prodInput" placeholder="Enter Product Name (e.g. Blue Yoga Mat)">
+                <button onclick="generateProduct()" style="width: auto;">Generate</button>
+            </div>
+        </div>
+
+        <h3 style="align-self: flex-start; margin-top: 2rem;">Your History</h3>
+        <div id="historyGrid" class="grid"></div>
+    </main>
+    <script src="script.js"></script>
+    <script>loadHistory();</script> </body>
+</html>
 
